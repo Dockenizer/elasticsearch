@@ -1,7 +1,7 @@
 FROM dockenizer/alpine
 MAINTAINER Jacques Moati <jacques@moati.net>
 
-ENV ELASTICSEARCH_VERSION=5.0.1
+ENV ELASTICSEARCH_VERSION=5.1.1
 ENV GOSU_VERSION 1.7
 
 RUN apk --update add curl openjdk8-jre && \
