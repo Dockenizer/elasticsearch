@@ -14,8 +14,6 @@ RUN apk --update add curl openjdk8-jre && \
   adduser -DH -s /sbin/nologin elasticsearch && \
   chown -R elasticsearch:elasticsearch /usr/share/elasticsearch && \
 
-  /usr/share/elasticsearch/bin/elasticsearch-plugin install x-pack && \
-
   apk del --purge curl && \
   rm -rf /var/cache/apk/* && \
   rm elasticsearch-${ELASTICSEARCH_VERSION}.tar.gz
